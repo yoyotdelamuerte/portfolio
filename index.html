@@ -1,19 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style\indexStyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <h1>Elliot Latter Portfolio</h1>
-    <a href="about.html"><button class="btn">About me</button> </a>
-    <a href="projects.html"><button class="btn">Projects</button></a>
-    <a href="contact.html"><button class="btn">Contact</button></a>
-  </body>
+    <title>Elliot Latter | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style/indexStyle.css" />
+</head>
+
+<body>
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="profile-header">
+                <h1>ELLIOT<br>LATTER</h1>
+                <h2>Développeur Full stack</h2>
+                <p class="tagline">Passionné de sport, d'aéronautique et de nouvelles technologies. Je cherche à
+                    découvrir et construire le monde à venir.</p>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-target="experience">Expériences</button>
+                <button class="nav-btn" data-target="competences">Compétences</button>
+                <button class="nav-btn" data-target="formations">Formations</button>
+                <button class="nav-btn" data-target="contact">Contact</button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="https://github.com/yoyotdelamuerte" target="_blank" class="social-link"><i
+                        class="fab fa-github"></i> yoyotdelamuerte</a>
+                <a href="https://www.linkedin.com/in/elliot-l-9311b7243/" target="_blank" class="social-link"><i
+                        class="fab fa-linkedin"></i> Elliot Latter</a>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- EXPÉRIENCES -->
+            <section id="experience" class="content-section active">
+                <h2 class="section-title">EXPÉRIENCES PROFESSIONNELLES</h2>
+
+                <div class="card brutal-card">
+                    <div class="card-header">
+                        <h3>Développeur FullStack Junior</h3>
+                        <span class="badge">2023 > 2026</span>
+                    </div>
+                    <h4>chez Safran Nacelles</h4>
+                    <ul>
+                        <li>MCO et évolution applicative dans une équipe de développeurs français et indiens</li>
+                        <li>Mise en place d'un design system au sein d'une digital factory</li>
+                        <li>Participation à la création d'une identité pour la digital factory</li>
+                        <li>Coordination des équipes développeur, métier et UI, UX et suivi d'activité</li>
+                        <li>Réalisation de POC dans des délais courts</li>
+                    </ul>
+                </div>
+
+                <div class="card brutal-card">
+                    <div class="card-header">
+                        <h3>Développeur FullStack Junior</h3>
+                        <span class="badge">7 semaines - 2023</span>
+                    </div>
+                    <h4>chez Safran Nacelles</h4>
+                    <ul>
+                        <li>Refonte graphique d'une application</li>
+                        <li>Développement au sein d'une équipe de développeur</li>
+                    </ul>
+                </div>
+
+                <div class="card brutal-card">
+                    <div class="card-header">
+                        <h3>Développeur FullStack Junior</h3>
+                        <span class="badge">juin > juillet 2022</span>
+                    </div>
+                    <h4>chez Artemys, prestataire à Safran Nacelles</h4>
+                </div>
+
+                <div class="card brutal-card">
+                    <div class="card-header">
+                        <h3>Développeur FullStack Junior</h3>
+                        <span class="badge">5 semaines 2022</span>
+                    </div>
+                    <h4>chez Safran Nacelles</h4>
+                </div>
+            </section>
+
+            <!-- COMPÉTENCES -->
+            <section id="competences" class="content-section">
+                <h2 class="section-title">COMPÉTENCES</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category brutal-card">
+                        <h3>Langages</h3>
+                        <div class="tags">
+                            <span class="tag">HTML 5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JS</span>
+                            <span class="tag">TS</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category brutal-card">
+                        <h3>Frameworks</h3>
+                        <div class="tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">ASP.NET</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category brutal-card">
+                        <h3>Outils & Environnement</h3>
+                        <div class="tags">
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">SonarCloud</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category brutal-card">
+                        <h3>Gestion de Projet</h3>
+                        <div class="tags">
+                            <span class="tag">GitLab</span>
+                            <span class="tag">Azure DevOps</span>
+                            <span class="tag">Trello</span>
+                            <span class="tag">Notion</span>
+                            <span class="tag">Microsoft 365</span>
+                            <span class="tag">Google Workspace</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category brutal-card">
+                        <h3>UI / UX</h3>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Canva</span>
+                            <span class="tag">Balsamiq</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category brutal-card accent-card">
+                        <h3>Qualités Humaines</h3>
+                        <p>Organisé • Curieux et Passionné • Créatif et Innovant • Appétence UI/UX • Apprentissage
+                            rapide • Réactif</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORMATIONS -->
+            <section id="formations" class="content-section">
+                <h2 class="section-title">FORMATIONS</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item brutal-card">
+                        <div class="timeline-date">2024 / 2026</div>
+                        <div class="timeline-content">
+                            <h3>Master MSc</h3>
+                            <h4>Expert en informatique et système d'information</h4>
+                            <p>EPSI Rennes</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item brutal-card">
+                        <div class="timeline-date">2023 / 2024</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor IT DevOps</h3>
+                            <h4>Concepteur Développeur d'Application</h4>
+                            <p>EPSI Rennes</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item brutal-card">
+                        <div class="timeline-date">2021 / 2023</div>
+                        <div class="timeline-content">
+                            <h3>BTS informatique option développement</h3>
+                            <p>Saint Jo-Sup</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item brutal-card">
+                        <div class="timeline-date">2020 / 2021</div>
+                        <div class="timeline-content">
+                            <h3>L1 MISMI</h3>
+                            <p>Université du Havre</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item brutal-card">
+                        <div class="timeline-date">Avant 2020</div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat série scientifique</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="content-section">
+                <h2 class="section-title">CONTACT</h2>
+
+                <div class="contact-info brutal-card">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>elliot.latter@proton.me</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>76600 Le Havre / 35000 Rennes</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-car"></i>
+                        <span>Titulaire du permis B</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-language"></i>
+                        <span>Anglais (B1), Italien (A1)</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-desktop"></i>
+                        <span>Environnement: Windows, Mac</span>
+                    </div>
+                </div>
+
+                <div class="brutal-cta">
+                    <a href="mailto:elliot.latter@proton.me" class="btn-giant">M'ENVOYER UN EMAIL</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script tags at the bottom -->
+    <script src="script.js"></script>
+</body>
+
 </html>
